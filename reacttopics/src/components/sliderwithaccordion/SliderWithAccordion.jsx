@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+// css of this component is in app.css seperated by comments
 const Accordion = ({ title, content, index, activeIndex, onClick }) => {
   const isActive = index === activeIndex;
   const accordionClass = isActive ? "accordion active" : "accordion";
