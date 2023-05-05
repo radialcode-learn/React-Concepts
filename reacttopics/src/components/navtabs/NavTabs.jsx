@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-
+// there is no css file for this component because we are using bootstrap you can add you css to modify
 const NavTabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
   const handleClick = (e) => {
