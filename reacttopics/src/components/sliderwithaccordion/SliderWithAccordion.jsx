@@ -5,7 +5,7 @@ const Accordion = ({ title, content, index, activeIndex, onClick }) => {
   const accordionClass = isActive ? "accordion active" : "accordion";
 
   return (
-    // accordion data shown here
+    // accordion data shown here ..
     <div className={accordionClass}>
       <div className="accordion__title" onClick={() => onClick(index)}>
         {title}
@@ -17,17 +17,17 @@ const Accordion = ({ title, content, index, activeIndex, onClick }) => {
 
 const SliderWithAccordion = () => {
   const [activeSlide, setActiveSlide] = useState(0);
-  // data of slider
+  // data of the slider ..
   const slides = [
     { id: 1, content: "Slide 1" },
     { id: 2, content: "Slide 2" },
     { id: 3, content: "Slide 3" },
   ];
-  // to open the accordion
+  // to open the accordion ..
   const handleClickAccordion = (index) => {
     setActiveSlide(index);
   };
-  // for autoplay of slider with accordion
+  // for autoplay of slider with accordion ..
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((activeSlide) => (activeSlide + 1) % slides.length);
